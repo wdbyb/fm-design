@@ -1,0 +1,25 @@
+.button {
+  padding: 18px 25px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: all 0.3s;
+
+  &--light {
+    background-color: $color-white;
+    color: $color-dark-grey;
+  }
+
+  &:hover {
+    background-color: $color-light-peach;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 64px 25px;
+}
+
+.logo {
+  flex-shrink: 0;
+
+  width: 196px;
+  height: 24px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+
+    gap: 42px;
+
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &--dark {
+    color: $color-dark-grey;
+  }
+
+  &--light {
+    color: $color-white;
+  }
+}
