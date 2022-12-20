@@ -15,9 +15,14 @@
 @import './layout/container';
 @import './layout/header';
 @import './layout/footer';
+@import './layout/caption';
+@import './layout/intro';
+@import './layout/cta';
 
 // 5. Components
 @import './components/button';
+@import './components/card';
+@import './components/form';
 
 // 6. Page-specific styles
 @import './pages/home';
