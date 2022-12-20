@@ -16,10 +16,24 @@
   &--light {
     background-color: $color-white;
     color: $color-dark-grey;
+
+    &:hover {
+      background-color: $color-light-peach;
+      color: $color-white;
+    }
   }
 
-  &:hover {
-    background-color: $color-light-peach;
+  &--dark {
+    background-color: $color-peach;
     color: $color-white;
+
+    &:hover {
+      background-color: $color-light-peach;
+    }
+  }
+
+  &--submit {
+    padding: 18px 48px;
+    margin-left: auto;
   }
 }

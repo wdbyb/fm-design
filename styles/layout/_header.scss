@@ -30,6 +30,12 @@
     text-transform: uppercase;
   }
 
+  &__link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   &--dark {
     color: $color-dark-grey;
   }
