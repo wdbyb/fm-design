@@ -13,18 +13,26 @@
 
 // 4. Layout-related sections
 @import './layout/container';
+@import './layout/layout';
 @import './layout/header';
 @import './layout/footer';
 @import './layout/caption';
 @import './layout/intro';
 @import './layout/cta';
+@import './layout/advantages';
+@import './layout/hero';
 
 // 5. Components
 @import './components/button';
 @import './components/card';
 @import './components/form';
+@import './components/map';
+@import './components/address';
+@import './components/socials';
+@import './components/hamburger';
+@import './components/nav';
 
 // 6. Page-specific styles
-@import './pages/home';
+@import './pages/shared';
 
 // 7. Themes

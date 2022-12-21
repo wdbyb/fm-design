@@ -1,0 +1,24 @@
+.socials {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  gap: 16px;
+
+  color: $color-peach;
+
+  &__link {
+    display: flex;
+
+    transition: color 0.3s;
+
+    &:hover {
+      color: $color-light-peach;
+    }
+  }
+
+  @include for-mobile {
+    justify-content: center;
+    align-items: center;
+  }
+}

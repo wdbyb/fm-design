@@ -1,0 +1,18 @@
+.map {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  min-height: 326px;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 0;
+
+  @include for-tablet {
+    max-width: initial;
+    order: -1;
+  }
+
+  @include for-mobile {
+    border-radius: 0;
+  }
+}

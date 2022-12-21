@@ -39,26 +39,3 @@
     }
   }
 }
-
-.socials {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-
-  gap: 16px;
-
-  color: $color-peach;
-
-  &__link {
-    display: flex;
-
-    &:hover {
-      color: $color-light-peach;
-    }
-  }
-
-  @include for-mobile {
-    justify-content: center;
-    align-items: center;
-  }
-}

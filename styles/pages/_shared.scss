@@ -1,0 +1,69 @@
+.our-designs {
+  padding: 160px 40px;
+
+  @include for-tablet {
+    padding: 120px 40px;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    background-color: $color-dark-grey;
+    border-radius: 15px;
+    overflow: hidden;
+
+    @include for-tablet {
+      min-height: auto;
+      height: 200px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      &::before {
+        background-color: $color-peach;
+        opacity: 0.8;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #000;
+      opacity: 0.5;
+      transition: background-color 0.3s, opacity 0.3s;
+    }
+  }
+}
+
+.offices {
+  margin: 160px auto;
+
+  @include for-tablet {
+    margin: 120px auto;
+  }
+}
+
+.location {
+  &__maps {
+    display: grid;
+    gap: 32px;
+
+    @include for-tablet {
+      gap: 120px;
+    }
+
+    @include for-mobile {
+      gap: 40px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.hamburger {
+  display: none;
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 14px;
+  transition: transform 0.25s;
+
+  &__top,
+  &__middle,
+  &__bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    transform: rotate(0);
+    transition: transform 0.5s;
+    background: $color-black;
+  }
+
+  &__middle {
+    top: calc(50% - 1px);
+  }
+
+  &__bottom {
+    top: calc(100% - 1px);
+  }
+
+  @include for-mobile {
+    display: block;
+  }
+}
+
+.open {
+  &.hamburger {
+    transform: rotate(90deg);
+  }
+
+  .hamburger__top {
+    transform: rotate(45deg) translate(4px, 5px);
+  }
+
+  .hamburger__bottom {
+    transform: rotate(-45deg) translate(4px, -5px);
+  }
+
+  .hamburger__middle {
+    display: none;
+  }
+
+  & + .nav {
+    opacity: 1;
+    visibility: visible;
+  }
+}

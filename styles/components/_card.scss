@@ -6,7 +6,7 @@
   border-radius: 15px;
   overflow: hidden;
 
-  transition: all 0.3s;
+  transition: background 0.3s;
 
   cursor: pointer;
 
@@ -26,6 +26,12 @@
     .card__title {
       color: $color-white;
     }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    color: $color-peach;
+    transition: color 0.3s;
   }
 
   &__image {
@@ -56,11 +62,5 @@
       flex-direction: column;
       justify-content: center;
     }
-  }
-
-  &__title {
-    margin-bottom: 16px;
-    color: $color-peach;
-    transition: all 0.3s;
   }
 }
