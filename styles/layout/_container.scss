@@ -3,4 +3,8 @@
   max-width: 1190px;
   padding: 0 40px;
   margin: 0 auto;
+
+  @include for-mobile {
+    padding: 0;
+  }
 }

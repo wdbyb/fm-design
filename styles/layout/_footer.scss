@@ -17,6 +17,12 @@
     padding-bottom: 40px;
     margin-bottom: 32px;
     border-bottom: 1px solid rgba($color-white, 0.1);
+
+    @include for-mobile {
+      flex-direction: column;
+      border: 0;
+      margin: 0;
+    }
   }
 
   &__bottom {
@@ -25,6 +31,12 @@
     gap: 16px;
 
     color: rgba($color-white, 0.5);
+
+    @include for-mobile {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 40px;
+    }
   }
 }
 
@@ -43,5 +55,10 @@
     &:hover {
       color: $color-light-peach;
     }
+  }
+
+  @include for-mobile {
+    justify-content: center;
+    align-items: center;
   }
 }

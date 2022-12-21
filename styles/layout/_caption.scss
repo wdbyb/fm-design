@@ -23,6 +23,14 @@
         height: 320px;
       }
     }
+
+    @include for-mobile {
+      .caption__wrapper {
+        padding: 80px 24px;
+        padding-top: 400px;
+        border-radius: 0;
+      }
+    }
   }
 
   &--img-right {
@@ -49,6 +57,14 @@
         height: 320px;
       }
     }
+
+    @include for-mobile {
+      .caption__wrapper {
+        padding: 80px 24px;
+        padding-top: 400px;
+        border-radius: 0;
+      }
+    }
   }
 
   &__wrapper {
@@ -72,7 +88,6 @@
     position: relative;
     width: 100%;
     max-width: 540px;
-    z-index: 10;
 
     @include for-tablet {
       max-width: initial;

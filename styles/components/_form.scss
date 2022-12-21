@@ -21,4 +21,9 @@
       color: rgba($color-white, 0.5);
     }
   }
+
+  @include for-tablet {
+    max-width: 540px;
+    margin: 0 auto;
+  }
 }

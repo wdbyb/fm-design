@@ -2,12 +2,21 @@
   padding: 0 25px;
   margin-bottom: 160px;
 
+  @include for-mobile {
+    padding: 0;
+  }
+
   &__wrapper {
     position: relative;
     padding: 64px;
     background-color: $color-peach;
     border-radius: 15px;
     overflow: hidden;
+
+    @include for-mobile {
+      padding: 105px 24px;
+      border-radius: 0;
+    }
   }
 
   &__bg {

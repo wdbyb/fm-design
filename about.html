@@ -17,8 +17,12 @@
       <a class="logo" href="index.html">
         <img width="196" height="24" src="./assets/shared/desktop/logo-dark.png" alt="logo-dark">
       </a>
-
-      <nav class="nav nav--dark">
+      <button class="hamburger" id="menu-btn" type="button" aria-label="Open menu">
+        <span class="hamburger__top"></span>
+        <span class="hamburger__middle"></span>
+        <span class="hamburger__bottom"></span>
+      </button>
+      <nav class="nav nav--dark nav--header">
         <ul class="nav__list">
           <li><a class="nav__link" href="about.html">Our Company</a></li>
           <li><a class="nav__link" href="location.html">Locations</a></li>
@@ -63,27 +67,33 @@
       </section>
       <section class="offices container">
         <h2 class="visually-hidden">Our offices</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
+        <ul class="advantages__list advantages__list--location">
+          <li class="advantages__item advantages__item--location">
             <div class="advantages__picture advantages__picture--to-right">
               <img width="202" height="202" src="./assets/shared/desktop/illustration-canada.svg" alt="">
             </div>
-            <h3 class="heading-3 advantages__title">Canada</h3>
-            <button class="button button--dark">See Location</button>
+            <div>
+              <h3 class="heading-3 advantages__title">Canada</h3>
+              <button class="button button--dark">See Location</button>
+            </div>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--location">
             <div class="advantages__picture advantages__picture--to-top">
               <img width="202" height="202" src="./assets/shared/desktop/illustration-australia.svg" alt="">
             </div>
-            <h3 class="heading-3 advantages__title">Australia</h3>
-            <button class="button button--dark">See Location</button>
+            <div>
+              <h3 class="heading-3 advantages__title">Australia</h3>
+              <button class="button button--dark">See Location</button>
+            </div>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--location">
             <div class="advantages__picture advantages__picture--to-left">
               <img width="202" height="202" src="./assets/shared/desktop/illustration-united-kingdom.svg" alt="">
             </div>
-            <h3 class="heading-3 advantages__title">United Kingdom</h3>
-            <button class="button button--dark">See Location</button>
+            <div>
+              <h3 class="heading-3 advantages__title">United Kingdom</h3>
+              <button class="button button--dark">See Location</button>
+            </div>
           </li>
         </ul>
       </section>
@@ -122,7 +132,7 @@
             <img width="196" height="24" src="./assets/shared/desktop/logo-light.png" alt="logo-dark">
           </div>
 
-          <nav class="nav nav--light">
+          <nav class="nav nav--light nav--footer">
             <ul class="nav__list">
               <li><a class="nav__link" href="about.html">Our Company</a></li>
               <li><a class="nav__link" href="location.html">Locations</a></li>

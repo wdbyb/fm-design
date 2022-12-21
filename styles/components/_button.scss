@@ -35,5 +35,10 @@
   &--submit {
     padding: 18px 48px;
     margin-left: auto;
+
+    @include for-mobile {
+      margin: 0 auto;
+      margin-top: 24px;
+    }
   }
 }

@@ -12,6 +12,12 @@
     @include for-tablet {
       flex-direction: column;
       gap: 40px;
+      padding: 58px;
+    }
+
+    @include for-mobile {
+      padding: 72px 24px;
+      border-radius: 0;
     }
   }
 
@@ -20,6 +26,10 @@
     max-width: 540px;
     margin: 0 auto;
     color: $color-white;
+
+    @include for-mobile {
+      text-align: center;
+    }
   }
 
   &__desc {
@@ -27,7 +37,12 @@
     margin: 40px 0 0;
 
     @include for-tablet {
-      margin: 40px auto;
+      max-width: initial;
+      margin: 40px 0 0;
+    }
+
+    @include for-mobile {
+      margin: 24px 0 0;
     }
   }
 }
@@ -45,6 +60,12 @@
       padding: 60px;
       padding-bottom: 470px;
       text-align: center;
+    }
+
+    @include for-mobile {
+      padding: 80px 24px;
+      padding-bottom: 470px;
+      border-radius: 0;
     }
   }
 
@@ -175,6 +196,14 @@
 
     @include for-tablet {
       flex-direction: column;
+
+      &--location {
+        gap: 80px;
+      }
+    }
+
+    @include for-mobile {
+      padding: 0 24px;
     }
   }
 
@@ -192,6 +221,11 @@
         flex-direction: column;
         text-align: center;
       }
+    }
+
+    @include for-mobile {
+      flex-direction: column;
+      text-align: center;
     }
   }
 
@@ -261,6 +295,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+
+  @include for-tablet {
+    grid-template-columns: 1fr;
+  }
 }
 
 .offices {
@@ -273,12 +311,21 @@
   min-height: 326px;
   border-radius: 15px;
   overflow: hidden;
+
+  @include for-tablet {
+    max-width: initial;
+    order: -1;
+  }
 }
 
 .location {
   &__maps {
     display: grid;
     gap: 32px;
+
+    @include for-tablet {
+      gap: 120px;
+    }
   }
 }
 
@@ -286,12 +333,21 @@
   display: flex;
   gap: 30px;
 
+  @include for-tablet {
+    flex-direction: column;
+  }
+
   &__details {
     flex: 1 1 0;
     padding: 88px 95px;
     background-color: #fdf3f0;
     border-radius: 15px;
     overflow: hidden;
+
+    @include for-tablet {
+      flex: auto;
+      padding: 88px 74px;
+    }
   }
 
   &__title {
@@ -303,5 +359,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+
+    @include for-mobile {
+      grid-template-columns: 1fr;
+    }
   }
 }
