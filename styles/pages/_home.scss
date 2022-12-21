@@ -143,6 +143,10 @@
     right: -75px;
     width: 624px;
 
+    img {
+      width: 100%;
+    }
+
     @include for-tablet {
       top: auto;
       bottom: -360px;

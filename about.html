@@ -9,14 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
   <title>Designo</title>
+  <meta name="description" content="We make designs!">
 </head>
 
 <body class="body-text">
   <div id="app">
     <header class="header container">
       <a class="logo" href="index.html">
-        <img width="196" height="24" src="./assets/shared/desktop/logo-dark.png" alt="logo-dark">
+        <img width="202" height="27" src="./assets/shared/desktop/logo-dark.png" alt="Logo dark version">
       </a>
+
       <button class="hamburger" id="menu-btn" type="button" aria-label="Open menu">
         <span class="hamburger__top"></span>
         <span class="hamburger__middle"></span>
@@ -42,17 +44,36 @@
               connect with our clients&#8217; audiences.</p>
           </div>
           <div class="caption__bg-circle caption__bg-circle--hero">
-            <img src="./assets/about/desktop/bg-pattern-hero-about-desktop.svg" alt="">
+            <img width="640" height="640" src="./assets/about/desktop/bg-pattern-hero-about-desktop.svg"
+              aria-hidden="true">
           </div>
           <div class="caption__image caption__image--about">
-            <img src="./assets/about/desktop/image-about-hero.jpg" alt="Phone">
+            <picture>
+              <source type="image/jpeg"
+                srcset="./assets/about/mobile/image-about-hero.jpg 375w, ./assets/about/mobile/image-about-hero@2x.jpg 750w"
+                media="(max-width: 767px)">
+              <source type="image/jpeg"
+                srcset="./assets/about/tablet/image-about-hero.jpg 689w, ./assets/about/tablet/image-about-hero@2x.jpg 1378w"
+                media="(max-width: 1023px)">
+              <img width="476" height="480" src="./assets/about/desktop/image-about-hero.jpg"
+                srcset="./assets/about/desktop/image-about-hero@2x.jpg 952w" alt="Team members">
+            </picture>
           </div>
         </div>
       </section>
       <section class="caption caption--img-left container">
         <div class="caption__wrapper">
           <div class="caption__image">
-            <img src="./assets/about/desktop/image-world-class-talent.jpg" alt="Phone">
+            <picture>
+              <source type="image/jpeg"
+                srcset="./assets/about/mobile/image-world-class-talent.jpg 375w, ./assets/about/mobile/image-world-class-talent@2x.jpg 750w"
+                media="(max-width: 767px)">
+              <source type="image/jpeg"
+                srcset="./assets/about/tablet/image-world-class-talent.jpg 689w, ./assets/about/tablet/image-world-class-talent@2x.jpg 1378w"
+                media="(max-width: 1023px)">
+              <img width="476" height="640" src="./assets/about/desktop/image-world-class-talent.jpg"
+                srcset="./assets/about/desktop/image-world-class-talent@2x.jpg 1000w" alt="Talents">
+            </picture>
           </div>
           <div class="caption__info">
             <h2 class="caption__title heading-2">World-class talent</h2>
@@ -103,7 +124,15 @@
       <section class="caption caption--img-right container">
         <div class="caption__wrapper">
           <div class="caption__image">
-            <img src="./assets/about/desktop/image-real-deal.jpg" alt="Phone">
+            <picture>
+              <source type="image/jpeg"
+                srcset="./assets/about/mobile/image-real-deal.jpg 375w, ./assets/about/mobile/image-real-deal@2x.jpg 750w"
+                media="(max-width: 767px)">
+              <source type="image/jpeg"
+                srcset="./assets/about/tablet/image-real-deal.jpg 689w, ./assets/about/tablet/image-real-deal@2x.jpg 1378w"
+                media="(max-width: 1023px)">
+              <img width="476" height="640" src="./assets/about/desktop/image-real-deal.jpg" alt="Our works">
+            </picture>
           </div>
           <div class="caption__info">
             <h2 class="caption__title heading-2">The real deal</h2>
@@ -138,7 +167,7 @@
       <div class="footer__wrapper container">
         <div class="footer__top">
           <div class="logo">
-            <img width="196" height="24" src="./assets/shared/desktop/logo-light.png" alt="logo-dark">
+            <img width="202" height="27" src="./assets/shared/desktop/logo-light.png" alt="logo-dark">
           </div>
 
           <nav class="nav nav--light nav--footer">
@@ -164,35 +193,35 @@
           </div>
           <ul class="socials">
             <li>
-              <a class="socials__link" href="#">
+              <a class="socials__link" href="#" aria-label="Facebook">
                 <svg width="24" height="24">
                   <use xlink:href="./assets/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="socials__link" href="#">
+              <a class="socials__link" href="#" aria-label="Youtube">
                 <svg width="24" height="24">
                   <use xlink:href="./assets/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="socials__link" href="#">
+              <a class="socials__link" href="#" aria-label="Twitter">
                 <svg width="24" height="24">
                   <use xlink:href="./assets/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="socials__link" href="#">
+              <a class="socials__link" href="#" aria-label="Pinterest">
                 <svg width="24" height="24">
                   <use xlink:href="./assets/sprite.svg#icon-pinterest"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="socials__link" href="#">
+              <a class="socials__link" href="#" aria-label="Instagram">
                 <svg width="24" height="24">
                   <use xlink:href="./assets/sprite.svg#icon-instagram"></use>
                 </svg>
