@@ -24,7 +24,8 @@
       object-fit: cover;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       &::before {
         background-color: $color-peach;
         opacity: 0.8;

@@ -18,7 +18,8 @@
     background-color: $color-white;
     color: $color-dark-grey;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $color-light-peach;
       color: $color-white;
     }
@@ -28,7 +29,8 @@
     background-color: $color-peach;
     color: $color-white;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $color-light-peach;
     }
   }

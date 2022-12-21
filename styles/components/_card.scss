@@ -19,7 +19,8 @@
     margin: 0 24px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: $color-peach;
     color: $color-white;
 

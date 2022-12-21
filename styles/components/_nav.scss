@@ -42,6 +42,12 @@
   }
 
   &--footer {
+    .nav__link {
+      &::before {
+        background-color: $color-white;
+      }
+    }
+
     @include for-mobile {
       width: 100%;
       padding-top: 32px;
@@ -67,8 +73,25 @@
   }
 
   &__link {
-    &:hover {
-      text-decoration: underline;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      width: 0;
+      height: 1px;
+      background-color: $color-black;
+      transition: width 0.3s;
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        width: 100%;
+      }
     }
   }
 }
