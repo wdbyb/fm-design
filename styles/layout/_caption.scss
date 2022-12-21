@@ -1,4 +1,16 @@
 .caption {
+  &--hero {
+    margin-bottom: 160px;
+
+    @include for-tablet {
+      margin-bottom: 120px;
+    }
+
+    @include for-mobile {
+      margin: 0;
+    }
+  }
+
   &--img-left {
     .caption__image {
       left: 0;
@@ -81,6 +93,57 @@
     }
   }
 
+  &__bg-circle {
+    position: absolute;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &--hero {
+      bottom: 0;
+      left: 0;
+      width: 640px;
+      height: 640px;
+    }
+
+    &--world-class {
+      bottom: 0;
+      right: 45%;
+      width: 584px;
+      height: 584px;
+      transform: translateX(50%);
+    }
+
+    &--real-deal {
+      bottom: 0;
+      left: 0;
+      width: 584px;
+      height: 584px;
+    }
+
+    @include for-tablet {
+      &--hero {
+        bottom: 75px;
+        left: -150px;
+      }
+    }
+
+    @include for-mobile {
+      &--hero {
+        bottom: 225px;
+        left: 75px;
+        width: 292px;
+        height: 292px;
+
+        img {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
@@ -88,6 +151,7 @@
     position: relative;
     width: 100%;
     max-width: 540px;
+    z-index: 5;
 
     @include for-tablet {
       max-width: initial;
@@ -117,6 +181,8 @@
     bottom: 0;
 
     width: 43%;
+
+    z-index: 10;
 
     img {
       width: 100%;
