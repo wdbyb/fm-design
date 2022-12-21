@@ -7,13 +7,16 @@ export default defineConfig({
   build: {
     outDir,
     emptyOutDir: true,
-    // rollupOptions: {
-    //   input: {
-    //     main: resolve(__dirname, 'index.html'),
-    //   'web-design': resolve(__dirname, 'web-design.html'),
-    //   'app-design': resolve(__dirname, 'app-design.html'),
-    //   'graphic-design': resolve(__dirname, 'graphic-design.html'),
-    //   },
-    // },
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        'web-design': resolve(__dirname, 'web-design.html'),
+        'app-design': resolve(__dirname, 'app-design.html'),
+        'graphic-design': resolve(__dirname, 'graphic-design.html'),
+        contact: resolve(__dirname, 'contact.html'),
+        location: resolve(__dirname, 'location.html'),
+        about: resolve(__dirname, 'about.html'),
+      },
+    },
   },
 });
