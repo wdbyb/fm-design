@@ -73,6 +73,8 @@
   }
 
   &__link {
+    display: inline-block;
+
     position: relative;
 
     &::before {
