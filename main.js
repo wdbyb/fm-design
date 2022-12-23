@@ -1,4 +1,9 @@
 import './styles/main.scss';
+import location from './js/location';
+import home from './js/home';
+import about from './js/about';
+import contact from './js/contact';
+import design from './js/design';
 
 const menuBtn = document.getElementById('menu-btn');
 
@@ -7,117 +12,46 @@ menuBtn.addEventListener('click', () => {
   document.body.classList.toggle('overflow-hidden');
 });
 
-function createMap({ id, coords }) {
-  const map = L.map(id, {
-    center: coords,
-    zoom: 16,
-  });
-
-  L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}', {
-    maxZoom: 30,
-    subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
-  }).addTo(map);
-}
-
-const maps = [
-  {
-    id: 'map-canada',
-    coords: [43.64414050035226, -79.39457158840445],
-  },
-  {
-    id: 'map-australia',
-    coords: [-30.32388305775135, 149.7855395538651],
-  },
-  {
-    id: 'map-uk',
-    coords: [51.73270879965942, -3.8619428402317872],
-  },
-];
-
-if (document.querySelector('.location')) {
-  for (let i = 0; i < maps.length; i++) {
-    createMap(maps[i]);
-  }
-}
-
 gsap.registerPlugin(ScrollTrigger);
 
-const heroInfo = document.querySelector('.hero__info');
-const nav = document.querySelector('.nav');
-const links = document.querySelectorAll('.nav__link');
-const logo = document.querySelector('.logo');
-
-// gsap.to('.nav__link', {
-//   x: -50,
-//   duration: 1,
-//   stagger: 0.5,
-// });
-
-// gsap.from(logo, {
-//   x: -100,
-//   opacity: 0,
-//   duration: 1,
-// });
-
-const tl = gsap
-  .timeline()
-  .from(links, {
-    x: 100,
-    opacity: 0,
-    duration: 1,
-    stagger: 0.5,
-  })
-  .from(
-    logo,
-    {
-      x: -100,
+gsap
+  .timeline({
+    defaults: {
       opacity: 0,
       duration: 1,
     },
+  })
+  .from('.header .nav__link', {
+    x: 100,
+    stagger: 0.5,
+  })
+  .from(
+    '.header .logo',
+    {
+      x: -100,
+    },
     '<'
-  )
-  .from(
-    heroInfo,
-    {
-      y: 100,
-      opacity: 0,
-      duration: 2,
-    },
-    '-=3'
-  )
-  .from(
-    '.hero__image',
-    {
-      x: 150,
-      opacity: 0,
-      duration: 1.5,
-    },
-    '-=3'
   );
 
-const moo = gsap.fromTo(
-  '.our-designs .our-designs__item',
-  {
-    opacity: 0,
-    y: 250,
-  },
-  {
-    opacity: 1,
-    y: 0,
-    duration: 1,
-    stagger: 0.5,
-    scrollTrigger: {
-      trigger: '.hero',
-      immediateRender: false,
-      start: 'bottom 60%',
-      end: 'bottom center',
-      // markers: true,
-      toggleActions: 'play none none reverse',
-    },
-  }
-);
+if (document.querySelector('.location')) {
+  location();
+}
 
-moo.play();
+if (document.querySelector('.home')) {
+  home();
+}
+
+if (document.querySelector('.about')) {
+  about();
+}
+
+if (document.querySelector('.contact')) {
+  contact();
+}
+
+if (document.querySelector('.web-design')) {
+  design();
+}
 
 // const containers = gsap.utils.toArray('.grid-cols-2');
 
