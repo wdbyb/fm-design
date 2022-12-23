@@ -15,9 +15,6 @@
       right: 0;
       background-color: $color-black;
       z-index: 20;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s;
 
       &::before {
         content: '';
@@ -37,6 +34,12 @@
         color: $color-white;
         font-size: 24px;
         line-height: 25px;
+      }
+    }
+
+    .nav__link {
+      &::before {
+        background-color: $color-white;
       }
     }
   }

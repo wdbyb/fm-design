@@ -31,7 +31,7 @@ export default function home() {
     .from(
       '.hero__image',
       {
-        x: 150,
+        y: 150,
         duration: 1.5,
       },
       0.5
