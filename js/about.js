@@ -63,7 +63,7 @@ export default function about() {
       immediateRender: false,
       start: '60% center',
       end: 'bottom center',
-      markers: true,
+      // markers: true,
       toggleActions: 'play none none reverse',
     },
   });
