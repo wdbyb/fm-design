@@ -47,7 +47,6 @@ export default function home() {
       immediateRender: false,
       start: 'bottom 60%',
       end: 'bottom center',
-      // markers: true,
       toggleActions: 'play none none reverse',
     },
   });
@@ -64,7 +63,6 @@ export default function home() {
       immediateRender: false,
       start: '60% center',
       end: 'bottom center',
-      // markers: true,
       toggleActions: 'play none none reverse',
     },
   });

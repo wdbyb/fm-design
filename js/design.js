@@ -27,7 +27,6 @@ export default function design() {
       immediateRender: false,
       start: '70% 50%',
       end: 'bottom center',
-      // markers: true,
       toggleActions: 'play none none reverse',
     },
   });
